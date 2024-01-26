@@ -11,7 +11,7 @@ Pack of tests for testing Ajax mobile app
 1. Clone the repository:
 
     ```bash
-    git clone 
+    git clone https://github.com/YKonoplyov/developer_in_test_test_task_appium_Ajax.git
     ```
 2. Create virtual environment:
    ```
