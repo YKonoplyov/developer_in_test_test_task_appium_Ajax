@@ -1,0 +1,7 @@
+workspace.code-workspace
+venv
+element_ids.txt
+.env
+logs
+__pycache__
+.DS_Store
