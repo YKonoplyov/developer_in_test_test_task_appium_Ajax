@@ -22,8 +22,6 @@ APPIUM_PORT = "4723"
 def appium_service():
     service = AppiumService()
     service.start(
-        # Check the output of `appium server --help` for the complete list of
-        # server command line arguments
         args=["--address", APPIUM_HOST, "-p", APPIUM_PORT],
         timeout_ms=20000,
     )
