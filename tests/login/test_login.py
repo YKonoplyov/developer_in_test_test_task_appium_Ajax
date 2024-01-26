@@ -17,13 +17,13 @@ VALIDATION_ERROR_MESSAGE = "Invalid Login or Password"
     "login,password,expectation",
     [
         (LOGIN_EMAIL, VALID_PASSWORD, does_not_raise()),
-        # (LOGIN_EMAIL, "123456789", pytest.raises(TimeoutException)),
-        # ("zynoviy_pupka@faynanet.com", "123456789", pytest.raises(TimeoutException))
+        (LOGIN_EMAIL, "123456789", pytest.raises(TimeoutException)),
+        ("zynoviy_pupka@faynanet.com", "123456789", pytest.raises(TimeoutException))
     ],
     ids=[
         "Valid email and password",
-        # "Invalid password, valid email",
-        # "Invalid email and password"
+        "Invalid password, valid email",
+        "Invalid email and password"
     ],
 )
 def test_user_login(user_login_fixture, login: str, password: str, expectation):
